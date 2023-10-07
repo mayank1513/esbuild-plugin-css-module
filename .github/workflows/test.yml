@@ -1,0 +1,42 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 */8 * * *"
+jobs:
+  test:
+    if: github.run_number != 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm i -g pnpm && pnpm i
+        name: Install dependencies
+      - name: Run unit tests
+        run: pnpm test
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          directory: ./packages/fork-me
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: fork-me
+      - run: pnpm update --latest -w
+        name: Update dependencies
+      - run: pnpm build
+        name: Build all apps to make sure it is not broken due to dependency upgrades
+      - name: Run unit tests
+        run: pnpm test
+      - name: Setup Git
+        run: |
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
+          git fetch
+          git checkout main
+      - name: Save upgraded packages back to repo
+        run: git add . && git commit -m "upgrade deps" && git push origin main
+        continue-on-error: true
