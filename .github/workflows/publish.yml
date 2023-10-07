@@ -32,6 +32,7 @@ jobs:
       - run: npm i -g pnpm && pnpm i
         name: Install dependencies
       - run: pnpm build --filter esbuild-plugin-css-module-example
+        working-directory: .
         name: build example app to run tests
         # fail and not publish if any of the unit tests are failing
       - name: Test
