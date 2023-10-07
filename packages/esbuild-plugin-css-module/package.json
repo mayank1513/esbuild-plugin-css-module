@@ -2,7 +2,7 @@
 	"name": "esbuild-plugin-css-module",
 	"author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
 	"private": false,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "ESBuild plugin to handle CSS modules",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -21,12 +21,14 @@
 		"build": "tsc && node touchup.js",
 		"publish-package": "cd dist && npm publish --access public"
 	},
+	"dependencies": {
+		"postcss": "^8.4.31",
+		"postcss-modules": "^6.0.0"
+	},
 	"devDependencies": {
 		"@types/node": "^20.8.3",
 		"@vitest/coverage-v8": "^0.34.6",
 		"esbuild": "^0.18",
-		"postcss": "^8.4.31",
-		"postcss-modules": "^6.0.0",
 		"tiny-glob": "^0.2.9",
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.6"
