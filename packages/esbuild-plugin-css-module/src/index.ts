@@ -5,7 +5,7 @@ import postcss from "postcss";
 import postcssModules from "postcss-modules";
 
 const cssModulePlugin: () => Plugin = () => ({
-	name: "css-module",
+	name: "esbuild-plugin-css-module-" + uuid(),
 	setup(build): void {
 		build.onResolve({ filter: /\.module\.css$/, namespace: "file" }, args => ({
 			path: `${args.path}#css-module`,
@@ -46,5 +46,7 @@ const cssModulePlugin: () => Plugin = () => ({
 		}));
 	},
 });
+
+const uuid = () => (Date.now() * Math.random()).toString(36).slice(0, 8);
 
 export = cssModulePlugin;

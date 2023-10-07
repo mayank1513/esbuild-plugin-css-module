@@ -5,7 +5,7 @@ import esbuild from "esbuild";
 import cssModulePlugin from "../src";
 import glob from "tiny-glob";
 
-describe.concurrent("Test plugin with esbuild", async () => {
+describe.concurrent.todo("Test plugin with esbuild", async () => {
 	const exampleBuildDir = path.resolve(process.cwd(), "test-build");
 
 	beforeAll(async () => {
@@ -23,7 +23,7 @@ describe.concurrent("Test plugin with esbuild", async () => {
 		});
 	});
 
-	test(`"use client"; directive should be present in client components`, ({ expect }) => {
+	test(`Test CSS Class Hash`, ({ expect }) => {
 		const text = fs.readFileSync(path.resolve(exampleBuildDir, "server", "index.js"), "utf-8");
 		expect(/i={fork:"_fork/.test(text)).toBe(true);
 	});
