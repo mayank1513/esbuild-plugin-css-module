@@ -36,17 +36,17 @@
 		"url": "https://github.com/sponsors/mayank1513"
 	},
 	"keywords": [
+		"esbuild-plugin-css-module",
+		"esbuild-plugin",
+		"typescript",
+		"javascript",
+		"css-module",
+		"esbuild",
+		"react18",
 		"react",
 		"nextjs",
-		"typescript",
-		"react18",
-		"esbuild",
-		"esbuild-plugin",
-		"esbuild-plugin-css-module",
-		"css-module",
 		"css",
 		"tsup",
-		"javascript",
 		"mayank1513"
 	]
 }
