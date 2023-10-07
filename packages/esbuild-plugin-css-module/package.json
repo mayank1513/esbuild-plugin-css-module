@@ -41,6 +41,7 @@
 		"typescript",
 		"javascript",
 		"css-module",
+		"postcss",
 		"esbuild",
 		"react18",
 		"react",
