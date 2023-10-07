@@ -1,13 +1,31 @@
-# Turborepo template [![test](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mayank1513/turborepo-template/graph/badge.svg)](https://codecov.io/gh/mayank1513/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me)
+# esbuild-plugin-css-module [![test](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mayank1513/esbuild-plugin-css-module/graph/badge.svg)](https://codecov.io/gh/mayank1513/esbuild-plugin-css-module) [![Version](https://img.shields.io/npm/v/esbuild-plugin-css-module.svg?colorB=green)](https://www.npmjs.com/package/esbuild-plugin-css-module) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/esbuild-plugin-css-module.svg)](https://www.npmjs.com/package/esbuild-plugin-css-module) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/esbuild-plugin-css-module)
 
-✅ Fully Treeshakable (`import from @mayank1513/fork-me/client/component`)\
+✅ Fully Treeshakable (`import from esbuild-plugin-css-module/client/component`)\
 ✅ Full TypeScript Support\
 ✅ Unleash the full power of React18 Server components\
 ✅ Works with all build systems/tools/frameworks for React18\
 
-This is a template created based on official starter Turborepo.
+## Install
 
-Simply click on `Use this template` button to use and customize this template for your next JavaSctipt / TypeScript / React / Vue / Next.js library or project.
+```bash
+$ pnpm add esbuild-plugin-css-module
+```
+
+or
+
+```
+$ npm install esbuild-plugin-css-module
+```
+
+or
+
+```
+$ yarn add esbuild-plugin-css-module
+```
+
+```
+
+
 
 ## What's different from scaffolding turbo-repo by `create-turbo`
 
@@ -26,14 +44,14 @@ Following features make it really cool and useful
 
 ## Checklist
 
-- [ ] Clone this repo
+
 - [ ] Set up `CodeCov`
   - [ ] Visit codecov and setup your repo
   - [ ] Create repository secrets for `CODECOV_TOKEN`
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate publishing package
   - [ ] login to your `npm` account and create automation token
   - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`
-- [ ] Update description in `packages/@mayank1513/fork-me/package.json`
+- [ ] Update description in `packages/esbuild-plugin-css-module/package.json`
 - [ ] Update Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)
 - [ ] Create your library and update examples
 - [ ] Update README
@@ -68,7 +86,7 @@ Each package/example is 100% [TypeScript](https://www.typescriptlang.org/).
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd esbuild-plugin-css-module
 pnpm build
 ```
 
@@ -77,7 +95,7 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd esbuild-plugin-css-module
 pnpm dev
 ```
 
