@@ -1,4 +1,4 @@
-import { OnLoadResult, Plugin } from "esbuild";
+import { Plugin } from "esbuild";
 import fs from "node:fs";
 import path from "node:path";
 import postcss from "postcss";
