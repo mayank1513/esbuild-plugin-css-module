@@ -20,6 +20,30 @@ or
 $ yarn add esbuild-plugin-css-module
 ```
 
+## use with `tsup`
+
+```ts
+// tsup.config.ts or tsup.config.js
+import { defineConfig } from "tsup";
+import cssModulePlugin from "esbuild-plugin-css-module";
+
+export default defineConfig(options => ({
+    ...
+    esbuildPlugins:[cssModulePlugin()]
+}));
+```
+
+## use with esbuild
+
+```ts
+import cssModulePlugin from "esbuild-plugin-css-module";
+
+esbuild.build({
+	...
+	plugins: [cssModulePlugin()],
+});
+```
+
 ### 🤩 Don't forger to start [this repo](https://github.com/mayank1513/esbuild-plugin-css-module)!
 
 Want handson course for getting started with Turborepo? Check out [React and Next.js with TypeScript](https://www.udemy.com/course/react-and-next-js-with-typescript/?referralCode=7202184A1E57C3DCA8B2) and [The Game of Chess with Next.js, React and TypeScrypt](https://www.udemy.com/course/game-of-chess-with-nextjs-react-and-typescrypt/?referralCode=851A28F10B254A8523FE)
@@ -29,6 +53,10 @@ Want handson course for getting started with Turborepo? Check out [React and Nex
 ## License
 
 Licensed as MIT open source.
+
+## Credits
+
+Solution adopte from [this discussion](https://github.com/egoist/tsup/issues/536#issuecomment-1302012400).
 
 <hr />
 
