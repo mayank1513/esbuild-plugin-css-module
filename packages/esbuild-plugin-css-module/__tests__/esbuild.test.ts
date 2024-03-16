@@ -5,7 +5,7 @@ import esbuild from "esbuild";
 import cssModulePlugin from "../src";
 import glob from "tiny-glob";
 
-describe.concurrent.todo("Test plugin with esbuild", async () => {
+describe("Test plugin with esbuild", async () => {
 	const exampleBuildDir = path.resolve(process.cwd(), "test-build");
 
 	beforeAll(async () => {
@@ -25,6 +25,6 @@ describe.concurrent.todo("Test plugin with esbuild", async () => {
 
 	test(`Test CSS Class Hash`, ({ expect }) => {
 		const text = fs.readFileSync(path.resolve(exampleBuildDir, "server", "index.js"), "utf-8");
-		expect(/i={fork:"_fork/.test(text)).toBe(true);
+		expect(/{fork:["'][^"']*fork-me__fork[^"']*["']/.test(text)).toBe(true);
 	});
 });

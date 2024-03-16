@@ -1,6 +1,22 @@
-# esbuild-plugin-css-module [![test](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml) [![Version](https://img.shields.io/npm/v/esbuild-plugin-css-module.svg?colorB=green)](https://www.npmjs.com/package/esbuild-plugin-css-module) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/esbuild-plugin-css-module.svg)](https://www.npmjs.com/package/esbuild-plugin-css-module) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/esbuild-plugin-css-module)
+# esbuild-plugin-css-module
 
-✅ ESBuild plugin to handle CSS modules while building libraries
+[![test](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml) [![Version](https://img.shields.io/npm/v/esbuild-plugin-css-module.svg?colorB=green)](https://www.npmjs.com/package/esbuild-plugin-css-module) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/esbuild-plugin-css-module.svg)](https://www.npmjs.com/package/esbuild-plugin-css-module) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/esbuild-plugin-css-module)
+
+> We recommend using [`esbuild-plugin-react18-css`](https://github.com/react18-tools/esbuild-plugin-react18-css)
+
+✅ ESBuild plugin to handle CSS/SCSS modules, autoprefixer, etc. while bundling libraries
+
+✅ Create fully treeshakable libraries (import from esbuild-plugin-react18-css/client/component)
+
+✅ Use CSS/SCSS modules - automatically converted to BEM like CSS
+
+✅ fully treeshakable CSS - import only the CSS files your users need
+
+✅ Full TypeScript Support
+
+✅ Unleash the full power of React18 Server components
+
+✅ Works with all build systems/tools/frameworks for React18
 
 ## Install
 

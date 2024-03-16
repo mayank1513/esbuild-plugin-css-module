@@ -1,3 +1,6 @@
+::placeholder {
+	color: gray;
+}
 .fork {
 	position: fixed;
 	display: flex;
@@ -15,6 +18,7 @@
 	text-shadow:
 		0px 1px 0px rgba(255, 255, 255, 0.3),
 		0px -1px 0px rgba(0, 0, 0, 0.7);
+	transition: all 0s;
 }
 .fork:hover {
 	filter: drop-shadow(0 0 5px var(--sc));
