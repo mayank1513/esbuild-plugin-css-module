@@ -4,7 +4,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const owner = process.env.OWNER;
+const owner = "mayank1513";
 const packageJson = require(path.resolve(process.cwd(), "package.json"));
 const ref = packageJson.name;
 if (!ref.startsWith(`@${owner}`)) {
@@ -15,9 +15,9 @@ if (!ref.startsWith(`@${owner}`)) {
 	);
 	const readMePath = path.resolve(process.cwd(), "README.md");
 	let readMe = fs.readFileSync(readMePath, { encoding: "utf8" });
-	const tmp = "!--|--!";
-	readMe = readMe.replace(new RegExp(`$${owner}/${ref}`, "g"), tmp);
+	const tmp = "!---";
+	readMe = readMe.replace(new RegExp(`${owner}/${ref}`, "g"), tmp);
 	readMe = readMe.replace(new RegExp(ref, "g"), packageJson.name);
-	readMe = readMe.replace(new RegExp(tmp, "g"), `$${owner}/${ref}`);
+	readMe = readMe.replace(new RegExp(tmp, "g"), `${owner}/${ref}`);
 	fs.writeFileSync(readMePath, readMe);
 }
