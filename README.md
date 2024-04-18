@@ -1,6 +1,6 @@
 # esbuild-plugin-css-module
 
-[![test](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml) [![Version](https://img.shields.io/npm/v/esbuild-plugin-css-module.svg?colorB=green)](https://www.npmjs.com/package/esbuild-plugin-css-module) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/esbuild-plugin-css-module.svg)](https://www.npmjs.com/package/esbuild-plugin-css-module) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/esbuild-plugin-css-module)
+[![test](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/esbuild-plugin-css-module/actions/workflows/test.yml) [![Version](https://img.shields.io/npm/v/esbuild-plugin-css-module.svg?colorB=green)](https://www.npmjs.com/package/esbuild-plugin-css-module) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/esbuild-plugin-css-module.svg)](https://www.npmjs.com/package/esbuild-plugin-css-module) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/esbuild-plugin-css-module)
 
 > We recommend using [`esbuild-plugin-react18-css`](https://github.com/react18-tools/esbuild-plugin-react18-css)
 
