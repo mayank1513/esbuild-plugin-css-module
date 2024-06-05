@@ -26,6 +26,7 @@ jobs:
           directory: ./packages/esbuild-plugin-css-module
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: esbuild-plugin-css-module
+      - run: git stash --include-untracked
       - run: npx @turbo/codemod update . && pnpm update --latest -r
         name: Update dependencies
       - run: pnpm build
